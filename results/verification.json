@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "checked_history_entries_including_shared": 223,
+  "test_passes": {
+    "baseline": 12,
+    "feedback": 13,
+    "memory_single": 12
+  },
+  "test_count": 20,
+  "accepted_rules": [],
+  "source_unchanged_since_protocol": true,
+  "independent_regrading": true,
+  "test_memory_frozen": true,
+  "test_feedback_contains_no_training_labels": true
+}

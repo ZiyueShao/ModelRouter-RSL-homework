@@ -1,0 +1,17 @@
+providers:
+  openai:
+    base_url: ${OPENAI_BASE_URL}
+    timeout: 110
+    max_retries: 0
+    keys:
+      - key: ${OPENAI_KEY_1}
+    models:
+      - name: ${HOMEWORK_MODEL}
+        routing_keys: [homework]
+server:
+  host: 127.0.0.1
+  port: 8000
+auth:
+  api_key: ${ROUTER_INTERNAL_API_KEY}
+semantic_routing:
+  enabled: false

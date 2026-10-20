@@ -1,0 +1,19 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+*.db-*
+results/private/
+results/*.json
+results/*.tmp
+.embed_cache/
+*.log
+
+# 已检查、随作业提交的真实实验记录
+!results/learning.json
+!results/evaluation.json
+!results/verification.json
+!results/environment.json
+!results/diagnostics.json

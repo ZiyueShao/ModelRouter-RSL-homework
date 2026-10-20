@@ -1,0 +1,138 @@
+{
+  "protocol": {
+    "frozen_at_utc": "2026-10-20T13:26:05Z",
+    "dataset_version": "orders-v4-20261020",
+    "model": "qwen2.5:14b-instruct",
+    "context_length": 8192,
+    "temperature": 0,
+    "max_tokens": 2048,
+    "source_sha256": {
+      "app/core/rsl.py": "403bc2b01d22e9241fc569e368a1da5b9ad7130f8238f2cb2062bb0444790f31",
+      "app/api/rsl.py": "b6b27a00e77b11e4f681c854b79b10b2eebebf29900b0020694e10211cc66b65",
+      "homework.py": "f11e25f8309415fb0612eecaff2b980222a97716e4f65dfab658d3415bda487c",
+      "config/providers.yaml": "885e29729e347dc7925952f5670f901ef29b5345e86f8dd5753dc0e329d9c32c"
+    },
+    "dataset_sha256": "d60ee0bb63910f8b405308e95ad32ae7636dbdba5fff44c882d5819496d79705",
+    "split_counts": {
+      "train": 12,
+      "validation": 8,
+      "test": 20
+    },
+    "training_feedback": "labeled fields, not counted as independent test success",
+    "validation": "strictly more passes, no regression, single calls, no labeled feedback",
+    "test": "frozen memory; shared baseline/feedback first answer; rule-only repair; new held-out seed"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen2.5:14b-instruct",
+        "model": "qwen2.5:14b-instruct",
+        "modified_at": "2026-10-20T13:06:46.026121748Z",
+        "size": 8988124069,
+        "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "14.8B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 5120,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      }
+    ]
+  },
+  "loaded_model": {
+    "models": [
+      {
+        "name": "qwen2.5:14b-instruct",
+        "model": "qwen2.5:14b-instruct",
+        "size": 10425372507,
+        "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "14.8B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-20T13:56:03.833638541Z",
+        "size_vram": 10425372507,
+        "context_length": 8192,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "ollama": {
+    "version": "0.40.6"
+  },
+  "warmup": {
+    "model": "qwen2.5:14b-instruct",
+    "created_at": "2026-10-20T13:26:03.833326132Z",
+    "message": {
+      "role": "assistant",
+      "content": "OK"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 254778350,
+    "load_duration": 2052766,
+    "prompt_eval_count": 34,
+    "prompt_eval_cached_count": 24,
+    "prompt_eval_duration": 49403000,
+    "eval_count": 2,
+    "eval_duration": 21235000
+  },
+  "initial_warmup": {
+    "model": "qwen2.5:14b-instruct",
+    "created_at": "2026-10-20T13:08:48.155608216Z",
+    "message": {
+      "role": "assistant",
+      "content": "OK"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 57160322475,
+    "load_duration": 28218560490,
+    "prompt_eval_count": 34,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 20746018000,
+    "eval_count": 2,
+    "eval_duration": 8189384000
+  },
+  "rental": {
+    "pod_id": "z9lcqf4woa2nqz",
+    "created_at_utc": "2026-10-20T13:04:48.643Z",
+    "hourly_usd": 0.59,
+    "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "gpu": {
+      "count": 1,
+      "id": "NVIDIA A40",
+      "memory": 50,
+      "vcpuCount": 9
+    },
+    "data_center": "CA-MTL-1",
+    "disk_gb": 25,
+    "status": "TERMINATED",
+    "terminated_confirmed": true,
+    "confirmed_at_utc": "2026-10-20T14:49:32+00:00",
+    "elapsed_seconds_upper_estimate": 6283.357,
+    "gpu_cost_usd_upper_estimate": 1.0298,
+    "cost_note": "Compute estimate from create time to confirmed deletion. Includes setup, development and formal runs. Not a settled invoice; excludes any separately billed storage.",
+    "image_source": "Runpod official catalog runpod-torch-v280",
+    "stock_evidence": "NVIDIA A40 SECURE CA-MTL-1 HIGH availability at creation",
+    "gpu_vram_mib": 46068,
+    "driver_version": "595.91.07"
+  }
+}
